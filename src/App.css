@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+button:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.rolldice{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+@keyframes rolling {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .rolling {
+    animation: rolling 1s ease infinite;
+  }
+  
